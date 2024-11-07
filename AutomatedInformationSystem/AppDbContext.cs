@@ -11,23 +11,20 @@ namespace AutomatedInformationSystem
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=store.db");  // Подключение к базе данных
+            optionsBuilder.UseSqlite("Data Source=store.db"); 
         }
 
-        // Дополнительные настройки моделей
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Настройка уникальности имени пользователя
+            
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.username)
                 .IsUnique();
 
-            // Настройка уникальности имени продукта
             modelBuilder.Entity<Product>()
                 .HasIndex(p => p.name)
                 .IsUnique();
 
-            // Настройка связей между сущностями
             modelBuilder.Entity<Sales>()
                 .HasOne(s => s.Product)
                 .WithMany()

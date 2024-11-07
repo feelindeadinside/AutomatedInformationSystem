@@ -16,14 +16,14 @@ namespace AutomatedInformationSystem
         {
             var loginWindow = new LoginWindow();
             loginWindow.Show();
-            this.Close(); // Закрывает главное окно после открытия окна входа
+            this.Close(); 
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             var registerWindow = new RegisterWindow();
             registerWindow.Show();
-            this.Close(); // Закрывает главное окно после открытия окна регистрации
+            this.Close(); 
         }
     }
 }

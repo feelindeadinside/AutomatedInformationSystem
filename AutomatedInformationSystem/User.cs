@@ -6,7 +6,7 @@ namespace AutomatedInformationSystem
 {
     public class User
     {
-        [Key]  // Указываем, что это первичный ключ
+        [Key]  
         public int user_id { get; set; }
 
         [Required]
@@ -24,7 +24,7 @@ namespace AutomatedInformationSystem
 
     public class Product
     {
-        [Key]  // Указываем, что это первичный ключ
+        [Key]  
         public int product_id { get; set; }
 
         [Required]
@@ -39,7 +39,7 @@ namespace AutomatedInformationSystem
 
     public class Customer
     {
-        [Key]  // Указываем, что это первичный ключ
+        [Key]  
         public int customer_id { get; set; }
 
         [Required]
@@ -55,16 +55,16 @@ namespace AutomatedInformationSystem
 
     public class Sales
     {
-        [Key]  // Указываем, что это первичный ключ
+        [Key]  
         public int sales_id { get; set; }
 
-        [ForeignKey("Product")]  // Указываем, что это внешний ключ на таблицу Product
+        [ForeignKey("Product")]  
         public int product_id { get; set; }
 
-        [ForeignKey("Customer")]  // Указываем, что это внешний ключ на таблицу Customer
+        [ForeignKey("Customer")] 
         public int customer_id { get; set; }
 
-        [ForeignKey("User")]  // Указываем, что это внешний ключ на таблицу User
+        [ForeignKey("User")]  
         public int user_id { get; set; }
 
         [Required]
@@ -73,7 +73,7 @@ namespace AutomatedInformationSystem
         [Required]
         public DateTime sale_date { get; set; }
 
-        // Навигационные свойства
+        
         public virtual Product Product { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual User User { get; set; }
