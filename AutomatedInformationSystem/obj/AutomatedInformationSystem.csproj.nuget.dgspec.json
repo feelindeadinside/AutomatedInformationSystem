@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj": {}
+    "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj": {
+    "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
+        "projectUniqueName": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
         "projectName": "AutomatedInformationSystem",
-        "projectPath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
+        "projectPath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
         "packagesPath": "C:\\Users\\nfomi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\obj\\",
+        "outputPath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nfomi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\nfomi\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

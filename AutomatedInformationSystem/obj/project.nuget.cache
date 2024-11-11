@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EfiJAbukBASwXMy/yCDje77VUhAIgdrzpOf1LHlM50k8YlxzF1VJe0LGpq6X0XTywaqOhoMqhJBxbEG2g8LR6Q==",
+  "dgSpecHash": "JkqLK+y41AOs/SK8a0Kee8cljj9r49ubrRlpmOEU2tpZzU3G668WgzF7VeHIi8JfB9oJwFpn4OG2YpCkdPZYiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystem\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
+  "projectFilePath": "C:\\Users\\nfomi\\RiderProjects\\AutomatedInformationSystemGit\\AutomatedInformationSystem\\AutomatedInformationSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nfomi\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\nfomi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -5,7 +5,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:AutomatedInformationSystem"
         mc:Ignorable="d"
-        Title="ClientWindow" Height="450" Width="800">
+        Title="АИС - Клиент"
+        Height="580"
+        Width="950"
+        WindowStartupLocation="CenterScreen"
+        Background="#1B1B1B">
+    
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="ButtonStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" CornerRadius="15" Background="#026c59" BorderThickness="2" BorderBrush="Transparent">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="#FFFFFF"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         
     </Grid>

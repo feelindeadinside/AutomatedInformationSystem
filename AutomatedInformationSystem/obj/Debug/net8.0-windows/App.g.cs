@@ -44,7 +44,7 @@ namespace AutomatedInformationSystem {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.3.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.0.0")]
         public void InitializeComponent() {
             
             #line 5 "..\..\..\App.xaml"
@@ -59,7 +59,7 @@ namespace AutomatedInformationSystem {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.3.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.0.0")]
         public static void Main() {
             AutomatedInformationSystem.App app = new AutomatedInformationSystem.App();
             app.InitializeComponent();
