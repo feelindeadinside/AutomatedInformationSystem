@@ -30,7 +30,46 @@
             <Setter Property="Background" Value="#FFFFFF"/>
         </Style>
     </Window.Resources>
+    
     <Grid>
+        <Grid>
+        <!-- Панель кнопок -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="950" Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="0">
+                <Button Content="Посмотреть товары" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="ViewProductsButton_Click"/>
+            </Border>
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="1">
+                <Button Content="Создать продажу" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="CreateSaleButton_Click"/>
+            </Border>
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="2">
+                <Button Content="Посмотреть продажи" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="ViewSalesButton_Click"/>
+            </Border>
+        </Grid>
+
+        <!-- Панель для отображения списка товаров -->
+        <StackPanel x:Name="ProductListPanel" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="100" Visibility="Collapsed">
+            <TextBlock x:Name="ProductListTextBlock" Foreground="White" FontSize="16"/>
+        </StackPanel>
         
+        <StackPanel x:Name="CreateSalePanel" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Margin="20">
+            <TextBlock Foreground="White" FontSize="18">Выберите товар и количество для продажи</TextBlock>
+            <ComboBox x:Name="ProductComboBox" Width="200" Margin="10"/>
+            <TextBox x:Name="QuantityTextBox" Width="200" Margin="10" Text="Введите количество"/>
+            <Button Content="Создать продажу" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="SaveSaleButton_Click"/>
+        </StackPanel>
+
+        <!-- Панель для просмотра продаж -->
+        <StackPanel x:Name="SalesListPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="100" Visibility="Collapsed">
+            <TextBlock x:Name="SalesListTextBlock" Foreground="White" FontSize="16"/>
+        </StackPanel>
+        
+    </Grid>
     </Grid>
 </Window>

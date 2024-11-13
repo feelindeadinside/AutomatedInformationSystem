@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:AutomatedInformationSystem"
         mc:Ignorable="d"
         Title="АИС - Админ"
-        Height="580"
+        Height="650"
         Width="950"
         WindowStartupLocation="CenterScreen"
         Background="#1B1B1B">
-    
+
     <Window.Resources>
         <Style TargetType="Button" x:Key="ButtonStyle">
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontSize" Value="18"/> <!-- Увеличили шрифт -->
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="BorderBrush" Value="White"/>
@@ -30,7 +30,58 @@
             <Setter Property="Background" Value="#FFFFFF"/>
         </Style>
     </Window.Resources>
+
     <Grid>
-        
+        <!-- Панель кнопок -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="950" Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="0">
+                <Button Content="Посмотреть товары" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="ViewProductsButton_Click"/>
+            </Border>
+
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="1">
+                <Button Content="Добавить товары" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="AddProductButton_Click"/>
+            </Border>
+
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="2">
+                <Button Content="Редактировать товары" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="EditProductButton_Click"/>
+            </Border>
+
+            <Border CornerRadius="15" Background="Transparent" Margin="10" Grid.Column="3">
+                <Button Content="Удалить товары" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="DeleteProductButton_Click"/>
+            </Border>
+        </Grid>
+
+        <!-- Панель для ввода данных -->
+        <StackPanel x:Name="InputPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Visibility="Collapsed">
+            <TextBox x:Name="ProductNameTextBox" Width="300" Margin="10" Text="Название товара" FontSize="16"/>
+            <TextBox x:Name="ProductPriceTextBox" Width="300" Margin="10" Text="Цена товара" FontSize="16"/>
+            <DatePicker x:Name="ProductExpirationDatePicker" Width="300" Margin="10" FontSize="16"/>
+            <Button Content="Сохранить" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="SaveProductButton_Click"/>
+        </StackPanel>
+
+        <!-- Панель для редактирования товара -->
+        <StackPanel x:Name="EditPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Visibility="Collapsed">
+            <ComboBox x:Name="ProductComboBox" Width="300" Margin="10" FontSize="16"/>
+            <TextBox x:Name="EditProductPriceTextBox" Width="300" Margin="10" Text="Новая цена" FontSize="16"/>
+            <Button Content="Редактировать" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="EditProductSaveButton_Click"/>
+        </StackPanel>
+
+        <!-- Панель для удаления товара -->
+        <StackPanel x:Name="DeletePanel" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Visibility="Collapsed">
+            <ComboBox x:Name="DeleteProductComboBox" Width="300" Margin="10" FontSize="16"/>
+            <Button Content="Удалить" Width="200" Height="50" Style="{StaticResource ButtonStyle}" Click="DeleteProductButton_Click_Confirm"/>
+        </StackPanel>
+
+        <!-- Панель для отображения списка товаров -->
+        <StackPanel x:Name="ProductListPanel" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="100" Visibility="Collapsed">
+            <TextBlock x:Name="ProductListTextBlock" Foreground="White" FontSize="16"/>
+        </StackPanel>
     </Grid>
 </Window>
